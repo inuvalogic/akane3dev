@@ -18,12 +18,9 @@ if ( isset($_SERVER['argv'][1]) ) {
                 $cli->serve($port);
                 break;
 
-            case 'migration':
-                $classname = (isset($_SERVER['argv'][2]) ? $_SERVER['argv'][2] : '');
-                $arguments = implode(' ', $_SERVER['argv']);
-                $arguments = str_replace('akane migration', '', $arguments);
-
-                $cli->migrationTools($arguments);
+			case 'mig':
+				array_shift($_SERVER['argv']);
+                $cli->migrationTools();
                 break;
 
 			case '--version':
