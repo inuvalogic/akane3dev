@@ -2,7 +2,7 @@
 
 date_default_timezone_set('Asia/Jakarta');
 
-include "../vendor/autoload.php";
+include "vendor/autoload.php";
 
 try {
 	$runner = new \Akane\Core\Runner;
