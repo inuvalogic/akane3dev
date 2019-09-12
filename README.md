@@ -1,17 +1,19 @@
 ## Project Wrapper for Akane Framework v3
 
-*Wrapper for Akane Framework 3 based website project*
+*Wrapper for Akane Framework v3 based website project*
 
-[Akane Framework 3](http://akane.webhade.com)
+[Akane Framework v3](http://akane.webhade.com)
 
 Version: 0.0.1
-Last Update: 2017-10-08
-Author: [WebHade Creative](http://www.webhade.id)
+
+Last Update: 2019-09-13
+
+Author: [WebHade Creative](http://www.webhadecreative.com)
 ___
 
 ### Minimum Requirement
 
-1. PHP 5.3.9 and p
+1. PHP 5.3.9 and up
 2. MySQL / MariaDB
 3. Composer
 
@@ -22,22 +24,25 @@ create database called `akane3` and running this command on your terminal/cmd ba
 #### Linux
 
 ```sh
-$ composer create-project inuvalogic/akanewrapper
-$ vendor/bin/phinx migrate
-$ vendor/bin/phinx seed:run
+$ composer create-project --prefer-dist inuvalogic/akanewrapper yourproject
+$ cd yourproject
+$ php akane mig migrate
+$ php akane mig seed:run
 ```
 
 #### Windows
 
 ```sh
-$ composer create-project inuvalogic/akanewrapper
-$ vendor\bin\phinx.bat migrate
-$ vendor\bin\phinx.bat seed:run
+C:\xampp\htdocs> composer create-project --prefer-dist inuvalogic/akanewrapper yourproject
+C:\xampp\htdocs> cd yourproject
+C:\xampp\htdocs\yourproject> php akane mig migrate
+C:\xampp\htdocs\yourproject> php akane mig seed:run
 ```
 
 ### Documentation
 
 For futher detailed documentation can be found here
+
 [akane.webhade.com](http://akane.webhade.com)
 
 ___
@@ -45,7 +50,9 @@ ___
 ## Contribute
 
 Feel free to contribute to this project
+
 visit our site here
+
 [akane.webhade.com](http://akane.webhade.com)
 
 ### Change Log
